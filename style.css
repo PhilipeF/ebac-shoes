@@ -154,6 +154,7 @@ article button {
         display: flex;
         justify-content: center;
     }
+
     article img {
         object-fit: contain;
         height: 200px;
@@ -163,4 +164,27 @@ article button {
         margin-bottom: 36px;
     }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    main .sobre {
+        display: block;
+    }
+
+    main img {
+        width: 100%;
+        object-fit: contain;
+        margin-bottom: 12px;
+    }
+
+    .produtos {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+    }
+}
+
+
 
