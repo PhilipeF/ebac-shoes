@@ -78,12 +78,16 @@ main p {
     justify-content: center;
 }
 
-.produtos article {
+.produtos article {    
     display: flex;
     flex-direction: column; 
-    gap: 1em;   
+    gap: 10px;   
 }
 
+article div {
+    justify-content: center;
+    display: flex;
+}
 
 article img {
     width: 200px;
@@ -105,3 +109,58 @@ article button {
     font-weight: bold;
     width: 100%;
 }
+
+@media screen and (max-width: 767px) {
+    .container {
+        max-width: 90%;
+    }
+
+    header {
+        margin-bottom: 12px;
+    }
+
+    header h1 {
+        max-width: 100px;
+    }
+
+    header .links {
+        display: block;
+    }
+
+    header div ul {
+        display: block;   
+    }
+
+    header .container {
+        justify-content: space-around;
+    }
+
+    main .sobre {
+        display: block;
+    }
+
+    main img {
+        max-width: 100%;
+        height: 300px;
+        object-fit: contain;        
+    }
+
+    .produtos {
+        display: flex;
+        flex-direction: column;    
+    }
+
+    article div {
+        display: flex;
+        justify-content: center;
+    }
+    article img {
+        object-fit: contain;
+        height: 200px;
+    }
+
+    article button {
+        margin-bottom: 36px;
+    }
+}
+
