@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    padding: 16px 0;
+    background-color: #3868D6;   
+    color: #fff; 
+}
+
+
+header .container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-style: italic
+}
+
+header div ul {
+    display: flex;   
+}
+
+header li {
+    list-style: none;
+}
+
+header li a {
+    color: #fff;
+    margin-right: 16px; 
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+
