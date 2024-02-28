@@ -10,6 +10,7 @@ header {
     padding: 16px 0;
     background-color: #3868D6;   
     color: #fff; 
+    margin-bottom: 48px;
 }
 
 .container {
@@ -22,7 +23,6 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
 }
 
 header h1 {
@@ -44,6 +44,64 @@ header li a {
     font-weight: bold;
 }
 
+main .sobre {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 2%;
+    margin-bottom: 32px;
+}
+
+main img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+}
+
+main h2 {
+    color:#3868D6;
+    border-bottom: 2px solid #3868D6;
+    padding-bottom: 12px;
+    margin-bottom: 32px;
+    font-style: italic;
+}
+
+main p {
+    font-size: 14px;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 24.75%);
+    grid-column-gap: 1%;
+    margin-bottom: 48px;
+    align-items: center; 
+    justify-content: center;
+}
+
+.produtos article {
+    display: flex;
+    flex-direction: column; 
+    gap: 1em;   
+}
 
 
+article img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+}
 
+article span {
+    font-size: 14px;
+}
+
+article button {
+    font-size: 14px;
+    padding: 8px;
+    border: none;
+    background: #3868D6;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    width: 100%;
+}
